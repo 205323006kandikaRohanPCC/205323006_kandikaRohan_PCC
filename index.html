@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nit mis portal login</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .body{
+            height: 100vh;
+            width: 100vw;
+            min-height: 700px;
+            background-image: url(pagebg.jpg);
+            background-position: center;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background-color: white;
+            width: 80%;
+            height: 80%;
+        }
+        .middlecontent{
+            width: 80%;
+            height: 80%;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        .login{
+            width: 80%;;
+            height: 50%;
+            border:solid rgb(12, 12, 56) 3px;
+            padding-right: 0;
+            border-top:solid 30px  rgb(68, 68, 151);
+            border-bottom:solid 30px rgb(68, 68, 151);
+            border-left:solid 15px  rgb(68, 68, 151);
+            border-right:solid 15px  rgb(68, 68, 151);
+            /* display: flex;
+           
+            gap: 10px; */
+            
+           
+        }
+        .login p{
+            background-color: rgb(174, 227, 210);
+            height: 40px;
+            padding-top: 10px;
+            padding-left: 40%;
+            padding-bottom: 5px;
+        }
+    .loginblock{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="card">
+           <img src="top-banner.jpg" alt="top-banner" width="100%">
+           <div class="middlecontent">
+            <div class="sideimage">
+                <img src="sideimage.jpg" alt="sideimage">
+            </div>
+            <div class="login">
+                <p>LOGIN</p>
+                <div class="loginblock">
+                <label for="rollno">Roll no</label>
+                <input type="text" pattern="[0-9]" id="rollno">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                </div>
+            </br>
+                <button>Sign In</button>
+                <a href="#">forgotten Password</a>
+ 
+            </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
